@@ -61,7 +61,7 @@ global $lang, $mysql, $query, $settings;
             <div class="inner">
                 <h3>
                     <?php 
-                        $fp = fopen('bot/cache/onlinerecord.txt', "r");
+                        $fp = fopen('cache/onlinerecord.txt', "r");
                         $tekst = fread($fp, 4);
                         $record = (int)$tekst;
                         fclose($fp);
