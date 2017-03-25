@@ -13,7 +13,7 @@ function startServer {
 		if [ -d $DIR ]; then
 			cd $DIR
 			if [ -f $EXEC ]; then
-				screen -dmS $SCREENNAME /usr/local/lsws/lsphp5/bin/php $EXEC
+				screen -dmS $SCREENNAME php $EXEC
 				echo "$DESC wystartował !"
 			else
 				echo "Error: uprawnienia ($EXEC) nie zostały znalezione !"
