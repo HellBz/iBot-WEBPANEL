@@ -100,12 +100,12 @@ global $lang, $mysql, $query, $settings;
 </div>
 
 <?php
-$fp = fopen('bot/cache/checkupdate.txt', "r");
+$fp = fopen('cache/checkupdate.txt', "r");
 $tekst = fread($fp, 4);
 $installedversion = (int)$tekst;
 fclose($fp);
 
-$strona = getStatus("http://inferno24.eu/update/checkupdate.txt");
+$strona = getStatus("http://inferno24.eu/update/checkupdatev2.txt");
 $gitversion = (int)$strona;
 
 if($installedversion != $gitversion)
