@@ -67,7 +67,7 @@ INSERT INTO `ibot_settings` (`sid`, `name`, `title`, `description`, `optionscode
 (2, 'ts3_tcp', 'Port TCP', 'Podaj port TCP serwera TS3', 'text', '', '10011', 1),
 (3, 'ts3_udp', 'Port UDP', 'Podaj port UDP serwera TS3', 'text', '', '9987', 1),
 (4, 'ts3_loginquery', 'Login query', 'Podaj login query serwera TS3', 'text', '', 'serveradmin', 1),
-(5, 'ts3_passwordquery', 'Hasło query', 'Podaj hasło query serwera TS3', 'text', '', 'Pdiel4j3', 1),
+(5, 'ts3_passwordquery', 'Hasło query', 'Podaj hasło query serwera TS3', 'text', '', 'haslo', 1),
 (6, 'bot_name', 'Nazwa bota', 'Podaj nazwę jaka będzie się wyświetlać na serwerze', 'text', '', 'iBot @ BOT', 1),
 (7, 'bot_channel', 'Kanał bota', 'Kanał na którym będzie siedział bot.', 'channels', '', '100', 1);
 
