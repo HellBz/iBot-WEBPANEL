@@ -84,14 +84,15 @@ function getSettingsCategoryName($gid)
 function createSettings($setting)
 {
 	global $mysql;
-	$result = $mysql->query("INSERT INTO ibot_settings (`name`, `title`, `description`, `optionscode`, `value`, `gid`) 
+	$result = $mysql->query("INSERT INTO ibot_settings (`name`, `title`, `description`, `optionscode`, `value`, `gid` , `selectlist`) 
 							VALUES 	(
 										'".$setting['name']."', 
 										'".$setting['title']."', 
 										'".$setting['description']."', 
 										'".$setting['optionscode']."',
 										'".$setting['value']."',
-										'".$setting['gid']."'
+										'".$setting['gid']."',
+										''
 									)");
 
 	return getSettingsID($setting['name']);
