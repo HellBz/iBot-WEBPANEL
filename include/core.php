@@ -174,7 +174,7 @@ function switch_lang($array,$key)
             if ( array_key_exists( 'en' ,$input) ){
                 return $input['en'];
             }else{
-                return str_replace("[key]",$key, $lang['plugins_key'] );
+                return str_replace("[key]",$key, $lang['lang_key_miss'] );
             }
         }
         
