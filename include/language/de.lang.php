@@ -108,7 +108,7 @@ $lang['edit'] = "Edit";
 
 $lang['type_text'] = "Regular Textfield";
 $lang['type_numeric'] = "Numeric";
-$lang['type_numericpm'] = "Numeric with -/+";
+$lang['type_numericpm'] = "Numeric mit -/+";
 $lang['type_textarea'] = "Textarea";
 $lang['type_yesno'] = "Choice yes or no";
 $lang['type_onoff'] = "Selection on or off";
@@ -140,8 +140,7 @@ $lang['plugins_action'] = "Action";
 $lang['plugins_autor'] = "Autor";
 $lang['plugins_install'] = "Install";
 $lang['plugins_uninstall'] = "Uninstall";
-
-$lang['lang_key_miss'] = "The \"<font color=\"red\"><strong>[key]</strong></font>\" key is not set correctly.";
+$lang['plugins_key'] = "Der \"<font color=\"red\"><strong>[key]</strong></font>\" Key ist nicht korrekt eingestellt.";
 
 $lang['main_settings'] = "Main settings";
 $lang['plugin_settings'] = "Plugin settings";

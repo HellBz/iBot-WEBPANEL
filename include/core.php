@@ -86,9 +86,9 @@ function createSettings($setting)
 	global $mysql;
 	$result = $mysql->query("INSERT INTO ibot_settings (`name`, `title`, `description`, `optionscode`, `value`, `gid` , `selectlist`) 
 							VALUES 	(
-										'".$setting['name']."', 
-										'".$setting['title']."', 
-										'".$setting['description']."', 
+										'".switch_lang($setting,'name')."', 
+										'".switch_lang($setting,'title')."', 
+										'".switch_lang($setting,'description')."', 
 										'".$setting['optionscode']."',
 										'".$setting['value']."',
 										'".$setting['gid']."',
@@ -156,5 +156,29 @@ function isInGroup($usergroups,$group) {
     }
     else {
         return false;
+    }
+}
+
+
+function switch_lang($array,$key)
+{
+    global $lang;
+    
+    $input = $array[$key];
+    
+	if ( is_array($input) ) {
+                
+        if ( array_key_exists( LANGUAGE ,$input) ){
+            return $input[LANGUAGE];
+        }else{
+            if ( array_key_exists( 'en' ,$input) ){
+                return $input['en'];
+            }else{
+                return str_replace("[key]",$key, $lang['plugins_key'] );
+            }
+        }
+        
+    }else{
+        return $input;
     }
 }

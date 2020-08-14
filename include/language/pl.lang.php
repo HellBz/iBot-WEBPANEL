@@ -141,6 +141,8 @@ $lang['plugins_autor'] = "Autor";
 $lang['plugins_install'] = "Zainstaluj";
 $lang['plugins_uninstall'] = "Odinstaluj";
 
+$lang['lang_key_miss'] = "\"<font color=\"red\"><strong>[key]</strong></font>\" Klucz nie jest prawidłowo ustawiony.";
+
 $lang['main_settings'] = "Ustawienia bota";
 $lang['plugin_settings'] = "Ustawienia pluginów";
 $lang['inputs'] = "wpisów";

@@ -68,8 +68,8 @@ if(isset($_GET['uninstall']))
 				    echo '
 				    	<tr>
 				    		<td>
-				    			<strong>'.$plugin['name'].'</strong> <span class="smalltext">'.$plugin['version'].'</span><br />
-				    			<span class="smalltext">'.$plugin['description'].'</span><br />
+				    			<strong>'.switch_lang($plugin,'name').'</strong> <span class="smalltext">'.$plugin['version'].'</span><br />
+				    			<span class="smalltext">'.switch_lang($plugin,'description').'</span><br />
 				    			<span class="smalltext">'.$autor.'</span>
 				    		</td>
 				    		<td align="center">
