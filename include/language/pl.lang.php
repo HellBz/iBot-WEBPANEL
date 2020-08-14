@@ -108,6 +108,7 @@ $lang['edit'] = "Edytuj";
 
 $lang['type_text'] = "Regularne pole tekstowe";
 $lang['type_numeric'] = "Liczba";
+$lang['type_numericpm'] = "Numeryczny z -/+";
 $lang['type_textarea'] = "Pole tekstowe";
 $lang['type_yesno'] = "Wybór tak lub nie";
 $lang['type_onoff'] = "Wybór włączony lub wyłączony";
