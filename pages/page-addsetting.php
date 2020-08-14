@@ -179,6 +179,7 @@ if(isset($_POST['addsettingsubmit']))
                                 <select class="form-control" name="type" id="sel1">
                                     <option value="text"><?php echo $lang['type_text']; ?></option>
                                     <option value="numeric"><?php echo $lang['type_numeric']; ?></option>
+                                    <option value="numericpm"><?php echo $lang['type_numericpm']; ?></option>
                                     <option value="textarea"><?php echo $lang['type_textarea']; ?></option>
                                     <option value="yesno"><?php echo $lang['type_yesno']; ?></option>
                                     <option value="onoff"><?php echo $lang['type_onoff']; ?></option>

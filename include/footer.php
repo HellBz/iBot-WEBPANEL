@@ -9,6 +9,7 @@
 
     </div>
     <script src="src/js/jquery.js"></script>
+    <script src="src/js/bootstrap-number-input.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 

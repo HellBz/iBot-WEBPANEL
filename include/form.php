@@ -22,6 +22,29 @@ function generateInputNumber($name='', $value='')
  *
  */
 
+function generateInputNumberPM($name='', $value='')
+{
+	return '
+      <div class="input-group">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-danger btn-number qtyminus"  data-type="minus" field="'.$name.'">
+                <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+          <input type="text" name="'.$name.'" class="form-control input-number" value="'.$value.'" >
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number qtyplus" data-type="plus" field="'.$name.'">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div>';
+
+}
+
+/**
+ *
+ */
+
 function generateInputTextarea($name='', $value='')
 {
 	return "<textarea class=\"form-control\" name=\"{$name}\" rows=\"3\">{$value}</textarea>";
