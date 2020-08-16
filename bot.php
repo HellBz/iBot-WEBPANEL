@@ -50,8 +50,11 @@ while(true)
 			$getinfo = $plugins[$i]."_info";
 
 			$info = $getinfo();
-
-			if(doit($date, $data[$plugins[$i]], convertinterval($info['interval'])))
+            
+            if ( is_array( $info['interval'] ) )    $intval = convertinterval($info['interval']);
+            else                                    $intval = $settings[$info['interval']];
+            
+			if(doit($date, $data[$plugins[$i]], $intval ))
 			{
 				$function = $plugins[$i]."_core";
 				$function();
