@@ -109,6 +109,7 @@ $lang['edit'] = "Edit";
 $lang['type_text'] = "Regular Textfield";
 $lang['type_numeric'] = "Numeric";
 $lang['type_numericpm'] = "Numeric mit -/+";
+$lang['type_numericdu'] = "Numeric Intervall";
 $lang['type_textarea'] = "Textarea";
 $lang['type_yesno'] = "Choice yes or no";
 $lang['type_onoff'] = "Selection on or off";

@@ -10,10 +10,29 @@
     </div>
     <script src="src/js/jquery.js"></script>
     <script src="src/js/bootstrap-number-input.js"></script>
+    
+    <script src="src/js/bootstrap-duration-picker.js"></script>
+    <link rel="stylesheet" href="src/css/bootstrap-duration-picker.css">
+    
     <script src="src/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script type="text/javascript">
+    
+        $('.duration').durationPicker({
+            translations: {
+                day: 'Day',
+                hour: 'Hour',
+                minute: 'Minute',
+                second: 'Secound',
+                days: 'Days',
+                hours: 'Hours',
+                minutes: 'Minutes',
+                seconds: 'Secounds',
+            },
+            showSeconds: true
+        });
+
         // Load the Visualization API and the corechart package.
         google.charts.load('current', {
             'packages': ['corechart']

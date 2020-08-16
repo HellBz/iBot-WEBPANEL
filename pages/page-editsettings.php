@@ -44,7 +44,8 @@ if(isset($_POST['settingsubmit']))
                             if($row['optionscode'] == 'text') $input = generateInputText($row['name'], $row['value']);
                             else if($row['optionscode'] == 'text') $input = generateInputText($row['name'], $row['value']);
                             else if($row['optionscode'] == 'numeric') $input = generateInputNumber($row['name'], $row['value']);
-                            else if($row['optionscode'] == 'numericpm') $input = generateInputNumberPM($row['name'], $row['value']);
+                            else if($row['optionscode'] == 'numericpm') $input = generateInputNumberPlusMinus($row['name'], $row['value']);
+                            else if($row['optionscode'] == 'numericdu') $input = generateInputNumberDuration($row['name'], $row['value']);
                             else if($row['optionscode'] == 'textarea') $input = generateInputTextarea($row['name'], $row['value']);
                             else if($row['optionscode'] == 'yesno') $input = generateInputYesno($row['name'], $row['value']);
                             else if($row['optionscode'] == 'onoff') $input = generateInputOnoff($row['name'], $row['value']);
